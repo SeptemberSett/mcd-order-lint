@@ -1,0 +1,23 @@
+test_ambiguous_alias (test_lint_order.LintTests.test_ambiguous_alias) ... ok
+test_ambiguous_target (test_lint_order.LintTests.test_ambiguous_target) ... ok
+test_empty_menu_unknown (test_lint_order.LintTests.test_empty_menu_unknown) ... ok
+test_group_incomplete (test_lint_order.LintTests.test_group_incomplete) ... ok
+test_invalid_product_schema (test_lint_order.LintTests.test_invalid_product_schema) ... ok
+test_missing_modifier_field_unknown (test_lint_order.LintTests.test_missing_modifier_field_unknown) ... ok
+test_output_json_serializable (test_lint_order.LintTests.test_output_json_serializable) ... ok
+test_pass_supported (test_lint_order.LintTests.test_pass_supported) ... ok
+test_quantity_bool (test_lint_order.LintTests.test_quantity_bool) ... ok
+test_quantity_decimal (test_lint_order.LintTests.test_quantity_decimal) ... ok
+test_quantity_missing (test_lint_order.LintTests.test_quantity_missing) ... ok
+test_quantity_negative (test_lint_order.LintTests.test_quantity_negative) ... ok
+test_schema_error_unknown_top (test_lint_order.LintTests.test_schema_error_unknown_top) ... ok
+test_store_mismatch_unknown (test_lint_order.LintTests.test_store_mismatch_unknown) ... ok
+test_time_missing_schema (test_lint_order.LintTests.test_time_missing_schema) ... ok
+test_unit_mismatch (test_lint_order.LintTests.test_unit_mismatch) ... ok
+test_unknown_modifier (test_lint_order.LintTests.test_unknown_modifier) ... ok
+test_unsupported_modifier (test_lint_order.LintTests.test_unsupported_modifier) ... ok
+
+----------------------------------------------------------------------
+Ran 18 tests in 0.009s
+
+OK

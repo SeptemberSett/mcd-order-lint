@@ -1,0 +1,19 @@
+# secrets & local config — never commit
+.env
+.env.*
+*.pem
+*.key
+mcp.json
+**/mcp.json
+.workbuddy/
+.cursor/
+**/__pycache__/
+*.pyc
+.Python
+.venv/
+venv/
+.idea/
+.vscode/
+*.zip
+.DS_Store
+Thumbs.db

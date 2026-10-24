@@ -1,0 +1,85 @@
+{
+  "schema_version": "1.0",
+  "summary": "当前检查范围通过",
+  "store_id": "store-demo",
+  "checked_at": "2026-10-24T10:00:00+08:00",
+  "findings": [
+    {
+      "code": "quantity",
+      "state": "pass",
+      "severity": "info",
+      "line_id": "L1",
+      "message": "数量须为正整数（布尔值无效）",
+      "evidence": []
+    },
+    {
+      "code": "identity",
+      "state": "pass",
+      "severity": "info",
+      "line_id": "L1",
+      "message": "名称与餐品 ID 对应",
+      "evidence": [
+        {
+          "store_id": "store-demo",
+          "queried_at": "2026-10-24T09:55:00+08:00",
+          "source": "query-meals",
+          "path": "products[0]",
+          "excerpt": "示例汉堡",
+          "response_ref": "demo-1"
+        }
+      ]
+    },
+    {
+      "code": "unit",
+      "state": "pass",
+      "severity": "info",
+      "line_id": "L1",
+      "message": "数量单位匹配",
+      "evidence": [
+        {
+          "store_id": "store-demo",
+          "queried_at": "2026-10-24T09:55:00+08:00",
+          "source": "query-meal-detail",
+          "path": "unit",
+          "excerpt": "份",
+          "response_ref": "demo-2"
+        }
+      ]
+    },
+    {
+      "code": "groups",
+      "state": "pass",
+      "severity": "info",
+      "line_id": "L1",
+      "message": "套餐组选择数量与允许 ID 符合",
+      "evidence": [
+        {
+          "store_id": "store-demo",
+          "queried_at": "2026-10-24T09:55:00+08:00",
+          "source": "query-meal-detail",
+          "path": "groups",
+          "excerpt": "模拟单品无套餐组",
+          "response_ref": "demo-2"
+        }
+      ]
+    },
+    {
+      "code": "modifier",
+      "state": "pass",
+      "severity": "info",
+      "line_id": "L1",
+      "message": "去洋葱：明确支持",
+      "evidence": [
+        {
+          "store_id": "store-demo",
+          "queried_at": "2026-10-24T09:55:00+08:00",
+          "source": "query-meal-detail",
+          "path": "modifiers",
+          "excerpt": "去洋葱支持",
+          "response_ref": "demo-2"
+        }
+      ]
+    }
+  ],
+  "limitations": "仅核对当前结构化输入；证据未获独立真实性认证，30分钟时效仅为本地检查策略，不保证菜单仍有效。不承诺食品安全、过敏原或过敏交叉接触安全。"
+}
